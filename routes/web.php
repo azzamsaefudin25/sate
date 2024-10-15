@@ -61,7 +61,7 @@ Route::get('memilihmatakuliah', function () {
 // })->name('penyusunanruang');
 
 Route::get('bagianakademik/penyusunanruang', [BagianAkademikController::class, 'createPenyusunanRuang'])->name('penyusunanruang.create');
-Route::post('penyusunanruang', [BagianAkademikController::class, 'storePengalokasianRuang'])->name('penyusunanruang.store');
+Route::post('penyusunanruang', [BagianAkademikController::class, 'storePenyusunanRuang'])->name('penyusunanruang.store');
 Route::get('bagianakademik/pengalokasianruang', [BagianAkademikController::class, 'createPengalokasianRuang'])->name('pengalokasianruang.create');
 Route::post('pengalokasianruang', [BagianAkademikController::class, 'storePengalokasianRuang'])->name('pengalokasianruang.store');
 
